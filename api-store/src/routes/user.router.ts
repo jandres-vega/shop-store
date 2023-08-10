@@ -8,6 +8,8 @@ import { Property } from '../types/interfaceRequest';
 const router: Router = Router();
 
 router.get('/all-users', getAllUsers);
-router.post('/create-new-user', validatorHandler(schemaCreateUser, Property.body), createNewUser);
+router.post('/create-new-user',
+    validatorHandler(schemaCreateUser, Property.body),
+    createNewUser);
 
 export default router;
