@@ -8,11 +8,7 @@ const userSchema: ModelAttributes = {
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4
    },
-   first_name: {
-      type: DataTypes.STRING,
-      allowNull: false
-   },
-   last_mame: {
+   full_name: {
       type: DataTypes.STRING,
       allowNull: false
    },
@@ -36,6 +32,10 @@ const userSchema: ModelAttributes = {
    picture: {
       type: DataTypes.STRING,
       allowNull: true
+   },
+   password: {
+      type: DataTypes.STRING,
+      allowNull: false
    }
 };
 
