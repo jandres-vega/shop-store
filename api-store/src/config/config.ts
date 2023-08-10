@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 import type { Config } from '../types/configT';
 dotenv.config();
-const config: Config = {
+const config: Config ={
    port_server: process.env.PORT_SERVER as string,
    name_db: process.env.NAME_DB as string,
    localhost: process.env.LOCALHOST as string,
