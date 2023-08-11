@@ -7,11 +7,13 @@ const cellphone:joi.StringSchema = joi.string();
 const isAdmin:joi.BooleanSchema = joi.boolean();
 const picture:joi.StringSchema  = joi.string().uri();
 const password:joi.StringSchema  = joi.string();
+const userName:joi.StringSchema = joi.string();
 
 const schemaCreateUser:joi.ObjectSchema = joi.object({
     full_name : full_name.required(),
     email: email.required(),
     cellphone: cellphone.required(),
+    userName: userName.required(),
     password: password.required(),
     isAdmin: isAdmin,
     picture: picture

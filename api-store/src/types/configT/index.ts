@@ -5,4 +5,5 @@ export interface Config {
    user_db: string;
    password: string;
    port_db: string;
+   jwt_keygen: string
 }

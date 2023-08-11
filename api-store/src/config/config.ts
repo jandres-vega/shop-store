@@ -7,6 +7,7 @@ const config: Config ={
    localhost: process.env.LOCALHOST as string,
    user_db: process.env.USER_DB as string,
    password: process.env.PASSWORD as string,
-   port_db: process.env.PORT_DB as string
+   port_db: process.env.PORT_DB as string,
+   jwt_keygen: process.env.JWT_KEYGEN as string
 };
 export { config };
