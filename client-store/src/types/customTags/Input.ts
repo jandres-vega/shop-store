@@ -1,2 +1,5 @@
 import {InputHTMLAttributes} from 'react';
-export type InputProps = InputHTMLAttributes<HTMLInputElement>
+import { UseFormRegisterReturn } from 'react-hook-form';
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
+    register?: UseFormRegisterReturn
+}

@@ -1,12 +1,12 @@
 import { Request, Response, NextFunction, Express } from 'express';
 import { AuthUserService } from '../../services/authUser.service';
-import { User } from '../../db/models/user.model';
+import { UserT } from '../../types/modelsT/user';
 
 const authService = new AuthUserService();
-const authUser = async(req:Request, res:Response, next:NextFunction) => {
+const authUser = async(req:Request, res:Response, next:NextFunction):Promise<void> => {
     try {
-        const userData = req.user as User;
-        const userWithToken = await authService.loginUser(userData.dataValues);
+        const userData = req.user as UserT;
+        const userWithToken = await authService.loginUser(userData);
         res.status(200).send(userWithToken);
     }
 catch (e) {

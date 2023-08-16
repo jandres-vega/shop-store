@@ -6,5 +6,5 @@ export interface UserT {
     userName: string,
     isAdmin: boolean,
     picture?: string,
-    password: string
+    password?: string
 }

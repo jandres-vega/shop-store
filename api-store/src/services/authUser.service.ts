@@ -3,9 +3,8 @@ import { PayloadJwt } from '../types/login';
 import { UserT } from '../types/modelsT/user';
 import { config } from '../config/config';
 
-
 class AuthUserService {
-    async loginUser(user: UserT):Promise<{user:UserT, token: string}>{
+    async loginUser(user:UserT):Promise<{user:UserT, token: string}>{
         const payload:PayloadJwt = {
             sub: user.id,
             role: user.isAdmin

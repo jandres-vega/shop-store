@@ -3,8 +3,9 @@ import {InputProps} from "../types/customTags/Input.ts";
 
 
 const CustomInput:React.FC<InputProps> = (props) => {
+    const {register} = props
     return (
-        <input type="text" {...props}/>
+        <input {...register} type="text" {...props}/>
     );
 };
 

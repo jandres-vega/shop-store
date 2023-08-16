@@ -3,6 +3,7 @@ import {Favourites} from "../containers/Favourites.tsx";
 import {Categories} from "../containers/Categories.tsx";
 import {Banner} from "../components/molecules/Banner.tsx";
 
+
 const LandingPage:React.FC = () => {
     return (
         <>

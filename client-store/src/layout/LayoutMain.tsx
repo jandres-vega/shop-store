@@ -1,5 +1,5 @@
 import React from 'react';
-import {LayoutProps} from "../types/layoutypes/LayoutProps.ts";
+import {LayoutProps} from "../types/layoutypes/LayoutProps.tsx";
 import {Header} from "../containers/Header.tsx";
 
 const LayoutMain:React.FC<LayoutProps> = ({children}) => {

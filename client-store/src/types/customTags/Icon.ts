@@ -1,6 +1,5 @@
-import {FontAwesomeIconProps} from "@fortawesome/react-fontawesome";
-
+import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 export interface IconProps {
-    icon: FontAwesomeIconProps['icon'],
+    icon: IconDefinition,
     className?:string
 }
