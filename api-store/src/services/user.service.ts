@@ -7,7 +7,10 @@ import { UserT } from '../types/modelsT/user';
 
 class UserService {
     async findAllUser(): Promise<User[]> {
-        return await sequelize.models.User.findAll();
+        return await sequelize.models.User.findAll({
+            attributes: {exclude: ["password"]}
+        });
+
     }
 
     async findUserById(id: string): Promise<User> {
